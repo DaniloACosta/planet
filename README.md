@@ -9,7 +9,7 @@ Requirements
 + Docker 23+
 
 ### Preparing to run REST applications
-+ mvn -Pskip-tests clean package
++ mvn clean package
 + docker-compose up
 
 ### Api Documentation - Swagger
