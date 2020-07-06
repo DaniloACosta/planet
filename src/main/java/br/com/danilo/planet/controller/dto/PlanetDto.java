@@ -41,7 +41,8 @@ public class PlanetDto {
 		List<PlanetDto> planetsDtoList = new ArrayList<PlanetDto>();
 		
 		planetsList.forEach(p -> {
-			planetsDtoList.add(PlanetDto.convert(p));			
+			p.setNumberFilmsAppeared(p.getFilms().length);
+			planetsDtoList.add(PlanetDto.convert(p));		
 		});
 		
 		return planetsDtoList.toArray(new PlanetDto[planetsDtoList.size()]);
